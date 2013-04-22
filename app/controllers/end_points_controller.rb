@@ -18,6 +18,7 @@ class EndPointsController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @end_point }
+      format.xml { render xml: @end_point }
     end
   end
 
