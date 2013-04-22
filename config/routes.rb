@@ -1,4 +1,7 @@
 Open311Router::Application.routes.draw do
+  resources :end_points
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
