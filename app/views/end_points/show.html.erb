@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Url:</b>
+  <%= @end_point.url %>
+</p>
+
+<p>
+  <b>Change set:</b>
+  <%= @end_point.change_set %>
+</p>
+
+<p>
+  <b>Specification:</b>
+  <%= @end_point.specification %>
+</p>
+
+<p>
+  <b>Environment:</b>
+  <%= @end_point.environment %>
+</p>
+
+
+<%= link_to 'Edit', edit_end_point_path(@end_point) %> |
+<%= link_to 'Back', end_points_path %>
