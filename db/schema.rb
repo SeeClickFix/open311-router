@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130422161948) do
+ActiveRecord::Schema.define(:version => 20130429124003) do
 
   create_table "end_points", :force => true do |t|
     t.string   "url"
@@ -20,6 +20,16 @@ ActiveRecord::Schema.define(:version => 20130422161948) do
     t.string   "environment"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+    t.integer  "server_id"
+  end
+
+  create_table "servers", :force => true do |t|
+    t.string   "url"
+    t.string   "changeset"
+    t.text     "contact"
+    t.text     "keyservice"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

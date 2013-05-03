@@ -1,0 +1,25 @@
+<h1>Discovery</h1>
+
+<p>Changeset: ...</p>
+<p>Contact: For help or to report bugs please email...</p>
+<p>Key Service: ...</p>
+
+<br/>
+
+<table>
+  <tr>
+    <th>Url</th>
+    <th>Change set</th>
+    <th>Specification</th>
+    <th>Environment</th>
+  </tr>
+
+<% @end_points.each do |end_point| %>
+  <tr>
+    <td><%= link_to end_point.url, end_point_path(end_point) %></td>
+    <td><%= end_point.change_set %></td>
+    <td><%= end_point.specification %></td>
+    <td><%= end_point.environment %></td>
+  </tr>
+<% end %>
+</table>
