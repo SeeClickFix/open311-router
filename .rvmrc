@@ -1,1 +1,1 @@
-rvm --create 2.5.3@open311-router
+rvm --create 2.6.6@open311-router
